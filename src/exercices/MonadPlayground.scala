@@ -32,7 +32,7 @@ object MonadPlayground extends App {
     def flatMap[B](f: (=> A) => Lazy[B]) : Lazy[B] = f(internalValue)
 
     def map[B](f: (=> A) => B) : Lazy[B] = flatMap(x => Lazy(f(x))) //Lazy(f(internalValue))
-    def flatten[A](l: Lazy[Lazy[A]]) : Lazy[A] = l.flatMap((x : Lazy[A]) => x)
+    def flatten[A](l: Lazy[Lazy[A]]) : Lazy[A] = l.flatMap(x => x)
   }
 
   object Lazy {
