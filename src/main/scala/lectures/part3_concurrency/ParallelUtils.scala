@@ -1,0 +1,16 @@
+package lectures.part3_concurrency
+
+import scala.collection.parallel.CollectionConverters._
+import scala.collection.parallel.immutable.ParVector
+
+/**
+  * Created by Tomohiro on 16 juillet 2019.
+  */
+
+object ParallelUtils extends App {
+
+  // 1 - Parallel Collections
+  val parList = List(1,2,3).par
+
+  val aParVector = ParVector[Int](1, 2, 3)
+}
