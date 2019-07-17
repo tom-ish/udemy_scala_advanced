@@ -4,7 +4,7 @@
 		module="udemy-scala-advanced-tutorial$sources_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20190716223528"
+		publication="20190717142022"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>
